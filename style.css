@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9fafc;
+  color: #333;
+}
+
+/* Header & hero */
+header {
+  background: linear-gradient(to right, #141E30, #243B55);
+  color: white;
+  text-align: center;
+}
+
+.hero {
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-top: 5px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Sections */
+section {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+section:nth-child(even) {
+  background: #fff;
+}
+
+section:nth-child(odd) {
+  background: #f1f5f9;
+}
+
+section h2 {
+  color: #243B55;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skills-grid div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-grid i {
+  color: #243B55;
+  font-size: 1.2rem;
+}
+
+
+section p,
+section a,
+section li {
+  max-width: 800px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  color: #333;
+  font-size: 1rem;
+}
+
+section a {
+  color: #243B55;
+  text-decoration: none;
+}
+
+
+/* Contact icons row */
+.contact-row {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* So it looks good on small screens */
+
+}
+
+.contact-row a {
+  color: #243B55;
+  font-size: 0.95rem;
+  /* Smaller, cleaner font */
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.contact-row a i {
+  font-size: 25px;
+  /* Icons slightly larger than text, but still neat */
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 0.9rem;
+  background: #141E30;
+}
+
